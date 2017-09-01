@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scene1"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/dalty"
+        android:layout_above="@+id/text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_your_favourite_method"
+        android:id="@+id/text_view"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/camera_button"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera_button_text"
+        android:id="@+id/camera_button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:onClick="image_from_camera"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gallery_button_text"
+        android:id="@+id/gallery_button"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/camera_button"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@android:drawable/ic_menu_gallery"
+        android:onClick="image_from_gallery"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/patologia_spinner"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_patology"
+        android:id="@+id/text_view2"
+        android:layout_above="@+id/patologia_spinner"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dalty</string>
+    <string name="choose_your_favourite_method">Choose your favourite method</string>
+    <string name="camera_button_text">CAMERA</string>
+    <string name="gallery_button_text">Gallery</string>
+    <string name="choose_patology">Choose patology</string>
+    <string name="no_network_connection_toast">no network available</string>
+</resources>
